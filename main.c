@@ -8,14 +8,11 @@ int main(int argc, char *argv[]) {
 	int grade[N_STUDENT];
 	int i;
 
-	 printf("input %d grades : ", i, N_STUDENT);
-	 
-	 for(i=0;i<N_STUDENT;i++){
+	for(i=0;i<N_STUDENT;i++){
 
-	 scanf("%d", &grade[i]);
-	 printf("grade[%i] = %d\n", i, grade[i]);
+     grade[i] = (i+1)*10;
+
+	 printf("grade[%i] = %i\n",i,grade[i]);
 	}
-	
-	system("PAUSE");
 	return 0;
 }
